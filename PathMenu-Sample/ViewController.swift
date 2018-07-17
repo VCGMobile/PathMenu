@@ -43,8 +43,8 @@ class ViewController: UIViewController {
         let menu = PathMenu(frame: view.bounds, startItem: startItem, items: items)
         menu.delegate = self
         menu.startPoint     = CGPoint(x: UIScreen.main.bounds.width/2, y: view.frame.size.height - 30.0)
-        menu.menuWholeAngle = CGFloat(M_PI) - CGFloat(M_PI/5)
-        menu.rotateAngle    = -CGFloat(M_PI_2) + CGFloat(M_PI/5) * 1/2
+        menu.menuWholeAngle = CGFloat(Double.pi) - CGFloat(Double.pi/5)
+        menu.rotateAngle    = -CGFloat(Double.pi) + CGFloat(Double.pi/5) * 1/2
         menu.timeOffset     = 0.0
         menu.farRadius      = 110.0
         menu.nearRadius     = 90.0
